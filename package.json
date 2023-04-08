@@ -1,0 +1,14 @@
+{
+  "name": "gtfs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "csv-parse": "^5.3.6"
+  }
+}
