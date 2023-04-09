@@ -1,7 +1,7 @@
 /**
  * 事業者情報(agency.txt)
  */
-export type Agency = {
+export type Agency = Readonly<{
   /** 事業者ID */
   agencyId: string;
   /** 事業者名称 */
@@ -18,12 +18,12 @@ export type Agency = {
   agencyFareUrl?: string;
   /** 事業者Eメール */
   agencyEmail?: string;
-};
+}>;
 
 /**
  * 事業者追加情報(agency_jp.txt)
  */
-export type AgencyJp = {
+export type AgencyJp = Readonly<{
   /** 事業者ID */
   agencyId: string;
   /** 事業者正式名称 */
@@ -36,4 +36,4 @@ export type AgencyJp = {
   agencyPresidentPos?: string;
   /** 代表者氏名 */
   agencyPresidentName?: string;
-};
+}>;

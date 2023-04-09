@@ -1,7 +1,7 @@
 /**
  * 経路情報(routes.txt)
  */
-export type Routes = {
+export type Routes = Readonly<{
   /** 経路ID */
   routeId: string;
   /** 事業者ID */
@@ -22,12 +22,12 @@ export type Routes = {
   routeTextColor?: string;
   /** 路線ID */
   jpParentRouteId?: string;
-};
+}>;
 
 /**
  * 経路追加情報(routes_jp.txt)
  */
-export type RoutesJp = {
+export type RoutesJp = Readonly<{
   /** 経路ID */
   routeId: string;
   /** ダイヤ改正日 */
@@ -38,4 +38,4 @@ export type RoutesJp = {
   viaStop?: string;
   /** 終点 */
   destinationStop?: string;
-};
+}>;

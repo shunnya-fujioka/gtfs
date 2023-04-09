@@ -1,7 +1,7 @@
 /**
  * 提供情報(feed_info.txt)
  */
-export type FeedInfo = {
+export type FeedInfo = Readonly<{
   /** 提供組織名 */
   feedPublisherName: string;
   /** 提供組織URL */
@@ -12,4 +12,4 @@ export type FeedInfo = {
   feedStartDatefeedEndDate: string;
   /** 提供データバージョン */
   feedVersion: string;
-};
+}>;

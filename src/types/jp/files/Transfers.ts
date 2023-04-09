@@ -1,7 +1,7 @@
 /**
  * 乗継情報(transfers.txt)
  */
-export type Transfers = {
+export type Transfers = Readonly<{
   /** 乗継元標柱ID */
   fromStopId: string;
   /** 乗継先標柱ID */
@@ -18,4 +18,4 @@ export type Transfers = {
   transferType: 0 | 1 | 2 | 3;
   /** 乗継時間 */
   minTransferTime: number;
-};
+}>;

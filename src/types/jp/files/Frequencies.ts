@@ -1,7 +1,7 @@
 /**
  * 運行間隔情報(frequencies.txt)
  */
-export type Frequencies = {
+export type Frequencies = Readonly<{
   /** 便ID */
   tripId: string;
   /** 開始時刻 */
@@ -18,4 +18,4 @@ export type Frequencies = {
    * 1 - 時刻を案内する
    */
   exactTimes?: 0 | 1;
-};
+}>;

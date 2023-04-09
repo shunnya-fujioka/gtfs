@@ -1,7 +1,7 @@
 /**
  * 通過時刻情報(stop_times.txt)
  */
-export type StopTimes = {
+export type StopTimes = Readonly<{
   /** 便ID */
   tripId: string;
   /** 到着時刻 */
@@ -37,5 +37,5 @@ export type StopTimes = {
   /** 通算距離 */
   shapeDistTraveled?: number;
   /** 発着時間精度 */
-  timePoint?: null;
-};
+  timePoint?: undefined;
+}>;

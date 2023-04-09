@@ -1,7 +1,7 @@
 /**
  * 描画情報(shapes.txt)
  */
-export type Shapes = {
+export type Shapes = Readonly<{
   /** 描画ID */
   shapeId: string;
   /** 描画緯度 */
@@ -11,5 +11,5 @@ export type Shapes = {
   /** 描画順序 */
   shapePtSequence: number;
   /** 描画距離 */
-  shapeDistTraveleded: null;
-};
+  shapeDistTraveleded: undefined;
+}>;

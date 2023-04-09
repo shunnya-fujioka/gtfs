@@ -1,7 +1,7 @@
 /**
  * 運行区分情報(calendar.txt)
  */
-export type Calendar = {
+export type Calendar = Readonly<{
   /** 運行日ID */
   serviceId: string;
   /**
@@ -64,12 +64,12 @@ export type Calendar = {
   startDate: string;
   /** サービス終了日 */
   endDate: string;
-};
+}>;
 
 /**
  * 運行日情報(calendar_dates.txt)
  */
-export type CalendarDates = {
+export type CalendarDates = Readonly<{
   /** サービスID */
   serviceId: string;
   /** 日付 */
@@ -82,4 +82,4 @@ export type CalendarDates = {
    * 2 - 運行区分非適用
    */
   exceptionType: 1 | 2;
-};
+}>;

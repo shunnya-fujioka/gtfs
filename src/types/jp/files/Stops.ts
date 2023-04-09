@@ -1,7 +1,7 @@
 /**
  * 停留所・標柱情報(stops.txt)
  */
-type Stops = {
+type Stops = Readonly<{
   /** 停留所・標柱ID */
   stopId: string;
   /** 停留所・標柱番号 */
@@ -29,9 +29,9 @@ type Stops = {
   /** 親駅情報 */
   parentStation?: string;
   /** タイムゾーン */
-  stopTimezone?: null;
+  stopTimezone?: undefined;
   /** 車椅子情報 */
   wheelchairBoarding?: string;
   /** のりば情報 */
   platformCode?: string;
-};
+}>;

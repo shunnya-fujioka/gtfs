@@ -1,7 +1,7 @@
 /**
  * 便情報(trips.txt)
  */
-type Trips = {
+type Trips = Readonly<{
   /** 経路ID */
   routeId: string;
   /** 運行日ID */
@@ -48,4 +48,4 @@ type Trips = {
   jpTripDescSymbol?: string;
   /** 営業所ID */
   jpOfficeId?: string;
-};
+}>;
