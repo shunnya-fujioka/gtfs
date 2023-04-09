@@ -9,6 +9,6 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "csv-parse": "^5.3.6"
+    "fast-csv": "^4.3.6"
   }
 }
