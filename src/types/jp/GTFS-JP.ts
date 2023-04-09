@@ -22,6 +22,23 @@ export { StopTimes } from "./files/StopTimes";
 export { Transfers } from "./files/Transfers";
 export { Translations } from "./files/Translations";
 
+export type FieldTypeList =
+  | Agency
+  | AgencyJp
+  | Calendar
+  | CalendarDates
+  | FareAttributes
+  | FareRules
+  | FeedInfo
+  | Frequencies
+  | OfficeJp
+  | Routes
+  | RoutesJp
+  | Shapes
+  | StopTimes
+  | Transfers
+  | Translations;
+
 /**
  * @link https://www.gtfs.jp/developpers-guide/format-reference.html#overview
  */
